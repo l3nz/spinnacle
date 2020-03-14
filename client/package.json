@@ -66,9 +66,11 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js",
+    "test": "node scripts/test.js  --watchAll=false",
         "src-check": "prettier --no-semi --trailing-comma es5 --no-bracket-spacing --jsx-bracket-same-line --print-width 100 --check 'src/**/*.js'",
-    "src-fix": "prettier --no-semi --trailing-comma es5 --no-bracket-spacing --jsx-bracket-same-line --print-width 100 --write 'src/**/*.js'"
+    "src-fix": "prettier --no-semi --trailing-comma es5 --no-bracket-spacing --jsx-bracket-same-line --print-width 100 --write 'src/**/*.js'",
+    "lint": "eslint src",
+        "storybook": "start-storybook -c ./config/storybook -s ./src"
 
   },
   "eslintConfig": {
