@@ -37,7 +37,7 @@ node {
   yarnWorkDir = file("${project.buildDir}/yarn")
 
   // Set the work directory where node_modules should be located
-  nodeModulesDir = file("${project.projectDir}/src")
+  nodeModulesDir = file("${project.projectDir}/client")
 }
 
 
