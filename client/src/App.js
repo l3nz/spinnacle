@@ -1,9 +1,12 @@
 import React from "react"
-import logo from "./logo.svg"
-import {Counter} from "./features/counter/Counter"
+//import logo from "./logo.svg"
+//import {Counter} from "./features/counter/Counter"
+import {MainPage} from "./redux/MainPage"
+import {StateJSON} from "./redux/StateJSON"
 import "./App.css"
 
-function App() {
+/*
+function App_() {
   return (
     <div className="App">
       <header className="App-header">
@@ -47,6 +50,17 @@ function App() {
           </a>
         </span>
       </header>
+    </div>
+  )
+}
+*/
+
+function App() {
+  return (
+    <div>
+      <h1>Ciao</h1>
+      <MainPage />
+      <StateJSON />
     </div>
   )
 }

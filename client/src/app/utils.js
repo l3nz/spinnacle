@@ -50,3 +50,18 @@ export function bpmToSeconds(bpmSpeed, nBeats) {
     return 0
   }
 }
+
+/**
+ Checks if the beat number should trigger an event.
+*/
+export function triggers(everyBeats, beatNumber) {
+  return beatNumber % everyBeats === 0
+}
+
+/**
+  When to schedule next event (in ms), given a
+  certain amount of BPM and a number of sub-beats in each bpm.
+  */
+export function rescheduleIn(bpm, subBeats) {
+  return (60 * 1000) / (bpm * subBeats)
+}

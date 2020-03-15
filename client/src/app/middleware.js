@@ -1,3 +1,6 @@
+import {rescheduleIn} from "./utils"
+import {timerTick} from "../redux/mainPageSlice"
+
 export const MIDDLEWARE_TIMER_CHANGE = "MIDDLEWARE_TIMER_CHANGE"
 
 // See https://github.com/matpaul/redux-timer-middleware/blob/master/src/index.js
