@@ -7,6 +7,13 @@ import {createSlice} from "@reduxjs/toolkit"
 export const FILE_LUNGO = "https://wav-sounds.com/wp-content/uploads/2017/09/Funny-01.wav"
 export const FILE_CORTO = "https://wav-sounds.com/wp-content/uploads/2017/09/Funny-03.wav"
 
+export const DRUM_SNARE =
+  "http://cdn.mos.musicradar.com/audio/samples/drum-demo-samples/CYCdh_K4-Snr05.mp3"
+export const DRUM_KICK =
+  "http://cdn.mos.musicradar.com/audio/samples/drum-demo-samples/CYCdh_ElecK01-Kick02.mp3"
+export const DRUM_CRASH =
+  "http://cdn.mos.musicradar.com/audio/samples/drum-demo-samples/CYCdh_Crash-03.mp3"
+
 export const slice = createSlice({
   name: "audio",
   initialState: {
@@ -14,7 +21,7 @@ export const slice = createSlice({
     error: null,
     media: {},
   },
-  reducers: { 
+  reducers: {
     audioLoading(state, action) {
       state.allLoaded = false
       const url = action.payload.url
